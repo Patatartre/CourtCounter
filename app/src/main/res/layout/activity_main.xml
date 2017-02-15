@@ -2,113 +2,136 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:id="@+id/activity_main">
+    android:orientation="vertical">
 
 
     <LinearLayout
-
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical"
-        tools:context="com.example.android.courtcounter.MainActivity">
+        android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:text="Team A"
-            android:textColor="@android:color/black" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.courtcounter.MainActivity">
 
-        <TextView
-            android:id="@+id/team_a_score"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="@android:color/black" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:onClick="addThreeForTeamA"
-            android:text="+3 points"
-            android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Team A"
+                android:textColor="@android:color/black" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:onClick="addTwoForTeamA"
-            android:text="+2 points"
-            android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/black" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:onClick="addOneForTeamA"
-            android:text="+free throw"
-            android:textColor="@android:color/black" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:onClick="addThreeForTeamA"
+                android:text="+3 points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:onClick="addTwoForTeamA"
+                android:text="+2 points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:onClick="addOneForTeamA"
+                android:text="+free throw"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Team B"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:onClick="addThreeForTeamB"
+                android:text="+3 points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:onClick="addTwoForTeamB"
+                android:text="+2 points"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:onClick="addOneForTeamB"
+                android:text="+free throw"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
     </LinearLayout>
 
-    <LinearLayout
-
-        android:layout_width="0dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical"
-
-        tools:context="com.example.android.courtcounter.MainActivity">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:text="Team B"
-            android:textColor="@android:color/black" />
-
-        <TextView
-            android:id="@+id/team_b_score"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="@android:color/black" />
+        android:orientation="horizontal">
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="128dp"
             android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:onClick="addThreeForTeamB"
-            android:text="+3 points"
-            android:textColor="@android:color/black" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="reset"
+            android:text="Reset" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:onClick="addTwoForTeamB"
-            android:text="+2 points"
-            android:textColor="@android:color/black" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:onClick="addOneForTeamB"
-            android:text="+free throw"
-            android:textColor="@android:color/black" />
-    </LinearLayout>
-
+    </RelativeLayout>
 </LinearLayout>
